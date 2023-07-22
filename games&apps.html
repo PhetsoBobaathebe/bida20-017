@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-UA-Compatile" content="IE-edge">
+<meta name="veiwport" content="width=device-width, intitial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/stylesheet.css" >
+	<link rel="stylesheet"  href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+    
+	<header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Warner Bros"></a>
+            </div>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav>
+                    <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="movies.html">Movies</a></li>
+						<li><a href="tvshows.html">TV Shows</a></li>
+						<li><a href="collections.html">Collections</a></li>
+						<li><a href="games&apps.html">Games & Apps</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Content -->
+    </div>
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        // function bodyScroll(){
+        //     if(Navbar.classList.contains('show')){
+        //         theBody.classList.add('hide-scroll');
+        //     }
+        //     else if(theBody.classList.contains('hide-scroll')){
+        //         theBody.classList.remove('hide-scroll');
+        //     }
+        // }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            // bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+
+
+
+	   
+</header>
+
+<div id="page">
+		<div id="contents">
+			<div id="welcome">
+				<p>
+					DISCOVER THE WORLD OF ULTIMATE GAMING
+				</p>
+				<img src="images/img.png" alt="Welcome">
+				<p>
+					DIVE INTO OUR NEW APPS
+				</p>
+			</div>
+			<div id="featured">
+				<h5>LATEST APPS AND GAMES</h5>
+				<ul>
+					<li>
+						<a href="work.html"><img src="images/img1.png" alt="Illustration"></a>
+						<h4>ROBOTS TO THE WORLD</h4>
+						<p>
+							Control a multi-ton robot armed with the coolest weapons сrush and destroy everything in your path! Unite in teams and create a clan with friends, take part in clan battles for domination on the planet!
+						</p>
+					</li>
+					<li>
+						<a href="work.html"><img src="images/img2.png" alt="Illustration"></a>
+						<h4>IN THE DARK (ARE YOU READY)</h4>
+						<p>
+							Pain.... Darkness... Alone, A man wakes, no proof of his identity, except for fragments of memory in a muddled mind. Danger... Destruction... Help Me...
+						</p>
+					</li>
+					<li>
+						<a href="work.html"><img src="images/CN.png" alt="Illustration"></a>
+						<h4>CARTOON NETWORK</h4>
+						<p>
+							The Cartoon Network App brings you the best of Cartoon Network and Cartoonito! Catch up on the latest full episodes (available the day after they air!) and hilarious minisodes with the Emmy® award winning Cartoon Network App.
+
+						</p>
+					</li>
+					<li>
+						<a href="work.html"><img src="images/TMZ.jpg" alt="Illustration"></a>
+						<h4>TMZ</h4>
+						<p>
+							Download the free TMZ app to discover breaking stories from the heart of Hollywood. From shocking, exclusive details to hilarious pop culture moments, the TMZ app will always keep you in the know.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div id="articles">
+				<div>
+					<h5>LATEST APPS AVAILABLE</h5>
+					<ul class="blogs">
+						<li>
+							<a href="blog.html"> <img src="images/CW_Seed_app.jpg" alt="Img">
+							<p>
+								<span>Jun 26, 2023</span> <b>About this app
+</b> Watch everything on The CW and so much more, all free with no login. Catch the latest episodes.
+						</li>
+						<li>
+							<a href="blog.html"> <img src="images/heads_up_mobile_app.jpg" alt="Img">
+							<p>
+								<span>Jun 30, 2023</span> <b>About this app</b> Love playing charades games? Looking to play games on Zoom with friends? Heads Up is one of the best word guessing games you’ll ever play! 
+							</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h5>GAMES</h5>
+					<ul class="illustrations">
+						<li>
+							<a href="work.html"><img src="images/img3.png" alt="Img"></a>
+						</li>
+						<li>
+							<a href="work.html"><img src="images/img4.png" alt="Img"></a>
+						</li>
+						<li>
+							<a href="work.html"><img src="images/img5.png" alt="Img"></a>
+						</li>
+						<li>
+							<a href="work.html"><img src="images/img6.png" alt="Img"></a>
+						</li>
+					</ul>
+					<h5>MORE GAMES</h5>
+					<ul class="illustrations">
+						<li>
+							<a href="work.html"><img src="images/img7.png" alt="Img"></a>
+						</li>
+						<li>
+							<a href="work.html"><img src="images/img8.png" alt="Img"></a>
+						</li>
+						<li>
+							<a href="work.html"><img src="images/img1.png" alt="Img"></a>
+						</li>
+						<li>
+							<a href="work.html"><img src="images/img2.png" alt="Img"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<style>
+   /*------------------------------ CONTENTS ------------------------------*/
+#contents {
+	color: #373637;
+    
+}
+#contents > div {
+	display: inline-block;
+	width: 1000px;
+	padding: 0 30px;
+}
+#contents h5 {
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 24px;
+	margin: 0 0 18px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	color: #ffbb00;
+}
+#contents h4 {
+	color: #ff0000;
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 0;
+	text-transform: uppercase;
+}
+#contents p {
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 0;
+}
+#contents p a {
+	color: #ffffff;
+}
+#contents a:hover {
+	color: #af3535;
+}
+#welcome {
+	height: 222px;
+	text-align: center;
+	width: 1000px;
+   
+}
+#welcome p {
+	float: left;
+	font-size: 20px;
+	width: 300px;
+	margin: 63px 2px 0;
+	text-align: right;
+}
+#welcome p:first-child {
+	text-align: left;
+}
+#welcome img {
+	float: left;
+    height: 230px;
+    width: 320px;
+}
+#featured {
+	margin-bottom: 24px;
+	width: 1000px;
+}
+#featured ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#featured ul li {
+	float: left;
+	width: 200px;
+	margin-left: 10px;
+}
+#featured ul li:first-child {
+	margin-left: 5px;
+}
+#featured ul li img {
+	box-shadow: 1px 0 #b0b0b0, -1px 0 #b0b0b0, 0 -1px #b0b0b0, 0 1px #b0b0b0;
+	margin: 2px 0 18px;
+    height: 250px;
+    width: 200px;
+
+}
+#featured ul li h4 {
+	margin-bottom: 12px;
+	
+}
+#featured ul li p {
+	font-size: 14px;
+	padding: 0;
+}
+#articles {
+	margin-bottom: 24px;
+}
+#articles > div {
+	float: left;
+	width: 440px;
+	margin-left: 20px;
+}
+#articles > div:first-child {
+	margin-left: 0;
+}
+#articles > div ul {
+	display: inline-block;
+	width: 100%;
+	list-style: none;
+	margin: 0 0 18px;
+	padding: 0;
+}
+#articles > div:first-child ul li {
+	display: inline-block;
+	height: 112px;
+	width: 100%;
+	
+}
+#articles > div:first-child ul li a {
+	color: #ffae00;
+	text-decoration: none;
+}
+#articles > div:first-child ul li img {
+	float: left;
+	margin-left: 10px;
+	margin-right: 20px;
+	height: 100px;
+    width: 100px;
+}
+#articles > div:first-child ul li p {
+	font-size: 13px;
+	line-height: 18px;
+	margin: 0;
+	padding-right: 10px;
+}
+#articles > div:first-child ul li p span {
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#articles > div:first-child ul li p b {
+	color: #af3535;
+	display: block;
+	margin-bottom: 6px;
+}
+#articles ul.illustrations li {
+	float: left;
+	width: 90px;
+	margin: 0 10px;
+}
+#articles ul.illustrations li img {
+	box-shadow: 1px 0 #b0b0b0, -1px 0 #b0b0b0, 0 -1px #b0b0b0, 0 1px #b0b0b0;
+	height: 100px;
+    width: 100px;
+}
+
+
+</style>
+
+<div id="footer">
+	<div class="connect">
+	
+	<div class="footnote">
+		<div>
+			<p>&copy; 2023 BY PHETSO BOBAATHEBE | ALL RIGHTS RESERVED</p>
+		</div>
+	</div>
+</div>	    
+
+</body>
+</html>

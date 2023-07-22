@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-UA-Compatile" content="IE-edge">
+<meta name="veiwport" content="width=device-width, intitial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/stylesheet.css" >
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+	
+</head>
+<body>
+    
+	  <!-- Page Loader -->
+	  <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+	<header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Warner Bros"></a>
+            </div>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav>
+                    <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="movies.html">Movies</a></li>
+						<li><a href="tvshows.html">TV Shows</a></li>
+						<li><a href="collections.html">Collections</a></li>
+						<li><a href="games&apps.html">Games & Apps</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Content -->
+    </div>
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        // function bodyScroll(){
+        //     if(Navbar.classList.contains('show')){
+        //         theBody.classList.add('hide-scroll');
+        //     }
+        //     else if(theBody.classList.contains('hide-scroll')){
+        //         theBody.classList.remove('hide-scroll');
+        //     }
+        // }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            // bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+
+	   
+</header>
+	
+
+ <div class="tm-hero d-flex justify-content-center align-items-center" id="tm-video-container">
+	<video autoplay muted loop id="tm-video">
+		<source src="video/hero.mp4" type="video/mp4">
+	</video>  
+</div>
+
+<div class="container-fluid tm-container-content tm-mt-60">
+	<div class="row mb-4">
+		<h2 class="col-6 tm-text-primary">
+			MOST POPULAR TV SHOWS
+		</h2>
+	</div>
+
+	<div class="row tm-mb-90 tm-gallery">
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image1.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>STREET RACE</h2>
+					<a href="movie-detail2.html">View more</a>
+				</figcaption>                    
+			</figure>
+			<div class="d-flex justify-content-between tm-text-gray">
+				<span>24 Oct 2020</span>
+				<span>10,460 views</span>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image2.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>THE WINNER</h2>
+					<a href="video-detail.html">View more</a>
+				</figcaption>                    
+			</figure>
+			<div class="d-flex justify-content-between tm-text-gray">
+				<span>22 Oct 2021</span>
+				<span>14,502 views</span>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image3.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>MIDTOWN</h2>
+					<a href="video-detail.html">View more</a>
+				</figcaption>                    
+			</figure>
+			<div class="d-flex justify-content-between tm-text-gray">
+				<span>18 Oct 2022</span>
+				<span>11,906 views</span>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image4.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>CLOCK</h2>
+					<a href="video-detail.html">View more</a>
+				</figcaption>                    
+			</figure>
+			<div class="d-flex justify-content-between tm-text-gray">
+				<span>12 Oct 2021</span>
+				<span>16,100 views</span>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image5.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>SUBWAY LOST AT NIGHT</h2>
+					<a href="video-detail.html">View more</a>
+				</figcaption>                    
+			</figure>
+			<div class="d-flex justify-content-between tm-text-gray">
+				<span>24 Sep 2022</span>
+				<span>16,008 views</span>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image6.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>THE HOOD</h2>
+					<a href="video-detail.html">View more</a>
+				</figcaption>                    
+			</figure>
+			<div class="d-flex justify-content-between tm-text-gray">
+				<span>21 Sep 2022</span>
+				<span>12,860 views</span>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image7.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>BLACK SWORD</h2>
+					<a href="video-detail.html">View more</a>
+				</figcaption>                    
+			</figure>
+			<div class="d-flex justify-content-between tm-text-gray">
+				<span>18 Sep 2020</span>
+				<span>10,900 views</span>
+			</div>
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+			<figure class="effect-ming tm-video-item">
+				<img src="images/image8.jpeg" alt="Image" class="img-fluid">
+				<figcaption class="d-flex align-items-center justify-content-center">
+					<h2>SPEED RACE</h2>
+					<a href="video-detail.html">View more</a>
+				</figcaption>                    
+			</figure>
+			
+		
+	</div>
+ 
+  <style>
+	/* Videos */
+
+.tm-hero {
+    height: 300px;
+    background: transparent;
+	
+}
+#tm-video-container {
+    height: 400px;
+    overflow: hidden;
+    background: none;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+#tm-video {
+    display: flex;
+    width: 1000px;
+    height: 400px;
+	object-fit: fill;
+}
+
+.tm-video-details {
+    height: 100%;
+    padding: 40px;
+}
+
+p, .tm-text-gray { color: #999; }
+.tm-text-gray-light { color: #CCC; }
+.tm-text-gray-dark { color: #e29d09; }
+
+.tm-video-item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+	height: 350px;
+	width: 250px;
+}
+
+.tm-video-item img {
+    position: relative;
+    display: block;
+	height: 350px;
+	width: 250px;
+    opacity: 0.8;
+}
+
+.tm-video-item figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tm-video-item figcaption::before,
+.tm-video-item figcaption::after {
+    pointer-events: none;
+}
+
+.tm-video-item figcaption,
+.tm-video-item figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tm-video-item figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+	transition: all 0.9s ease;
+}
+
+.tm-video-item h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+	color: rgb(245, 245, 245);
+}
+
+.tm-video-item h2,
+.tm-video-item p {
+    margin: 0;
+}
+
+.tm-video-item p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+.tm-gallery div.d-block { animation: show .5s ease; }
+
+@keyframes show {
+    0% {
+    	opacity: 0;
+    	transform: scale(0.9);
+    }
+    100% {
+    	opacity: 1;
+    	transform: scale(1);
+    }
+}
+
+/*---------------*/
+/***** Ming *****/
+/*---------------*/
+
+figure.effect-ming {
+	background: #030c17;
+}
+
+figure.effect-ming img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-ming figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming h2 {
+    font-size: 1.3em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover h2 {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption { background-color: rgba(58,52,42,0); }
+figure.effect-ming:hover img { opacity: 0.4; }
+
+  </style>
+ <script src="js/plugins.js"></script>
+ <script>
+	 $(window).on("load", function() {
+		 $('body').addClass('loaded');
+	 });
+
+	 $(function(){
+		 /************** Video background *********/
+
+		 function setVideoSize() {
+			 const vidWidth = 1280;
+			 const vidHeight = 720;
+			 const maxVidHeight = 400;
+			 let windowWidth = window.innerWidth;
+			 let newVidWidth = windowWidth;
+			 let newVidHeight = windowWidth * vidHeight / vidWidth;
+			 let marginLeft = 0;
+			 let marginTop = 0;
+		 
+			 if (newVidHeight < maxVidHeight) {
+				 newVidHeight = maxVidHeight;
+				 newVidWidth = newVidHeight * vidWidth / vidHeight;
+			 }
+		 
+			 if(newVidWidth > windowWidth) {
+				 marginLeft = -((newVidWidth - windowWidth) / 2);
+			 }
+		 
+			 if(newVidHeight > maxVidHeight) {
+				 marginTop = -((newVidHeight - $('#tm-video-container').height()) / 2);
+			 }
+		 
+			 const tmVideo = $('#tm-video');
+		 
+			 tmVideo.css('width', newVidWidth);
+			 tmVideo.css('height', newVidHeight);
+			 tmVideo.css('margin-left', marginLeft);
+			 tmVideo.css('margin-top', marginTop);
+		 }
+
+		 setVideoSize();
+
+		 // Set video background size based on window size
+		 let timeout;
+		 window.onresize = function () {
+			 clearTimeout(timeout);
+			 timeout = setTimeout(setVideoSize, 100);
+		 };
+
+	 });
+ </script>
+		<div id="footer">
+			<div class="connect">
+			
+			<div class="footnote">
+				<div>
+					<p>&copy; 2023 BY PHETSO BOBAATHEBE | ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

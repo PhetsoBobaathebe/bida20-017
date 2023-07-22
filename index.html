@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-UA-Compatile" content="IE-edge">
+<meta name="veiwport" content="width=device-width, intitial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/stylesheet.css" >
+	
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+    
+	<header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Warner Bros"></a>
+            </div>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav>
+                    <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="movies.html">Movies</a></li>
+						<li><a href="tvshows.html">TV Shows</a></li>
+						<li><a href="collections.html">Collections</a></li>
+						<li><a href="games&apps.html">Games & Apps</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Content -->
+    </div>
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        // function bodyScroll(){
+        //     if(Navbar.classList.contains('show')){
+        //         theBody.classList.add('hide-scroll');
+        //     }
+        //     else if(theBody.classList.contains('hide-scroll')){
+        //         theBody.classList.remove('hide-scroll');
+        //     }
+        // }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            // bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+
+	   
+</header>
+	    
+
+
+<section class="container">
+	<h1>COMING SOON TO THEATERS</h1> 
+				<div class="wrapper">
+					   
+				 <div class="media">
+					  <div class="layer">
+						 <p>THE DARKEST DAY OF MY LIFE</p>
+					  </div>
+						<img src="images/darkestday.png" alt="">
+						
+				 </div>
+
+				 <div class="media">
+					<div class="layer">
+					   <p>FUTURE DESTINY</p>
+					</div>
+					<img src="images/futuredestiny.png" alt="">
+					  
+			      </div>
+				  <div class="media">
+					<div class="layer">
+					   <p>THE ARCHER</p>
+					</div>
+					<img src="images/thearcher.png" alt="">
+					  
+			      </div>
+
+				  <div class="media">
+					<div class="layer">
+					   <p>THE JOURNEY</p>
+					</div>
+					<img src="images/thejourney.png" alt="">
+					
+			      </div>
+					
+					
+				</div>
+			
+	</section>
+		<div id="footer">
+			<div class="connect">
+			
+			<div class="footnote">
+				<div>
+					<p>&copy; 2023 BY PHETSO BOBAATHEBE | ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	
+</body>
+</html>

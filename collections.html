@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-UA-Compatile" content="IE-edge">
+<meta name="veiwport" content="width=device-width, intitial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/stylesheet.css" >
+	
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+    
+	<header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Warner Bros"></a>
+            </div>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav>
+                    <ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="movies.html">Movies</a></li>
+						<li><a href="tvshows.html">TV Shows</a></li>
+						<li><a href="collections.html">Collections</a></li>
+						<li><a href="games&apps.html">Games & Apps</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Content -->
+    </div>
+    <script>
+        const theBody = document.querySelector('body');
+        const openNav = document.querySelector('.menu-bar button');
+        const closeNav = document.querySelector('.close-nav button');
+        const Navbar = document.querySelector('.navbar');
+
+        // function bodyScroll(){
+        //     if(Navbar.classList.contains('show')){
+        //         theBody.classList.add('hide-scroll');
+        //     }
+        //     else if(theBody.classList.contains('hide-scroll')){
+        //         theBody.classList.remove('hide-scroll');
+        //     }
+        // }
+
+        function showHide(){
+            Navbar.classList.toggle('show');
+            // bodyScroll();
+        }
+
+        openNav.onclick = showHide;
+        closeNav.onclick = showHide;
+    </script>
+
+	   
+</header>
+	
+
+	<div id="body">
+		<ul>
+			<li>
+				<a href="western.html"><img src="images/gold.png" alt=""></a>
+				<b>WESTERN</b>
+				<p>
+					The Western is a film genre defined by the American Film Institute as films which are "set in the American West that [embody] the spirit, the struggle, and the demise of the new frontier
+				</p>
+			</li>
+			<li>
+				<a href="thejungle.html"><img src="images/thejungle.png" alt=""></a>
+				<b>SCI FI</b>
+				<p>
+					Science fiction is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science.
+				</p>
+			</li>
+			<li>
+				<a href="giveushope.html"><img src="images/giveushope.png" alt=""></a>
+				<b>ROMANCE</b>
+				<p>
+                    Romance films involve romantic love stories recorded in visual media for broadcast in theatres or on television that focus on passion, emotion, and the affectionate romantic involvement of the main characters.
+				</p>
+			</li>
+			<li>
+				<a href="bloodfast.html"><img src="images/bloodfist.png" alt=""></a>
+				<b>THRILLER</b>
+				<p>
+                    Thrillers are characterized and defined by the moods they elicit, giving their audiences heightened feelings of suspense, excitement, surprise, anticipation and anxiety.
+				</p>
+			</li>
+		</ul>
+		
+	</div>
+
+    <style>
+
+#body > ul {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+#body > ul li {
+	float: left;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	width: 220px;
+}
+#body > ul li > a {
+	background: url(images/frame.png) no-repeat center top;
+	display: block;
+	margin: 0;
+	padding: 5px 5px 29px;}
+    
+#body > ul li > a:hover {
+	opacity: 0.9;
+}
+#body > ul li > a img {
+	border: 0;
+	display: block;
+	margin: 0;
+	padding: 0;
+    height: 350px;
+	width: 210px;
+}
+#body > ul li b {
+	color: #facc00;
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding: 10px 0 5px;
+	text-transform: capitalize;
+}
+#body > ul li p {
+	color: #917d0d;
+	font-size: 15px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+}
+#body > ul li p a {
+	color: #c51313;
+	text-decoration: underline;
+}
+#body > ul li p a:hover {
+	color: #65b10f;
+}
+#body > div {
+	margin: 0;
+	overflow: hidden;
+	padding: 50px 0 0;
+}
+#body > .more {
+	color: #464646;
+	display: block;
+	font-size: 13px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: capitalize;
+	width: 80px;
+}
+#body > .more:hover {
+	color: #4a8b92;
+}
+
+
+    </style>
+	<div id="footer">
+		<div class="connect">
+		
+		<div class="footnote">
+			<div>
+				<p>&copy; 2023 BY PHETSO BOBAATHEBE | ALL RIGHTS RESERVED</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
